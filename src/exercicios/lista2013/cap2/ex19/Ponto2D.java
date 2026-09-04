@@ -9,7 +9,7 @@ public class Ponto2D {
         this.setEixoY(y);
     }
     
-    public void setEixoX(int x){
+    private void setEixoX(int x){
         this.eixoX = x;
     }
     
@@ -21,7 +21,7 @@ public class Ponto2D {
         this.eixoY = y;
     }
     
-    private double getEixoY(){
+    public double getEixoY(){
         return this.eixoY;
     }
     
