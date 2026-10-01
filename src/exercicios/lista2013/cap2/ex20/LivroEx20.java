@@ -1,6 +1,6 @@
 package exercicios.lista2013.cap2.ex20;
 
-public class Livro {
+public class LivroEx20 {
     private String titulo;
     private int paginas;
     private String generoLiterario;
@@ -8,7 +8,7 @@ public class Livro {
     private int paginasLidas;
     
     
-    public Livro(String titulo, int paginas, String generoLiterario, String autor){
+    public LivroEx20(String titulo, int paginas, String generoLiterario, String autor){
         this.setTitulo(titulo);
         this.setPaginas(paginas);
         this.setGeneroLiterario(generoLiterario);
@@ -63,7 +63,11 @@ public class Livro {
     }
     
     private void setPaginasLidas(int paginasLidas){
-        this.paginasLidas = paginasLidas;
+        if(paginasLidas >= 0){
+            this.paginasLidas = paginasLidas;
+        } else{
+            throw new IllegalArgumentException("paginasLidas deve ser maior ou igual 0");
+        }
     }
     
     public int getPaginasLidas(){

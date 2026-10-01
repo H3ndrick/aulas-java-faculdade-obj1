@@ -1,8 +1,13 @@
-package exercicios.lista2013.cap2.ex9;
+package exercicios.exercicio7.ex3;
 
 public class Lampada {
    private boolean estado;
    private int watts;
+   
+   public Lampada(){
+       this.setEstado(false);
+       this.setWatts(60);
+   }
    
    public Lampada(int watts){
        this.setEstado(false);
@@ -10,7 +15,7 @@ public class Lampada {
    }
    
    public void apertarInterruptor(){
-       if(this.getEstado()){
+       if(this.isAcesa()){
            this.desligarLampada();
        } else{
            this.ligarLampada();
@@ -37,7 +42,7 @@ public class Lampada {
        this.estado = estado;
    }
    
-   public boolean getEstado(){
+   public boolean isAcesa(){
        return this.estado;
    }
    

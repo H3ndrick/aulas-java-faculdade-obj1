@@ -1,15 +1,20 @@
-package exercicios.lista2013.cap2.ex19;
+package exercicios.exercicio7.ex15;
 
 public class Ponto2D {
     private double eixoX;
     private double eixoY;
     
-    public Ponto2D(int x, int y){
+    public Ponto2D(){
+        this.setEixoX(0);
+        this.setEixoY(0);
+    }
+    
+    public Ponto2D(double x, double y){
         this.setEixoX(x);
         this.setEixoY(y);
     }
     
-    public void setEixoX(int x){
+    private void setEixoX(double x){
         this.eixoX = x;
     }
     
@@ -17,13 +22,11 @@ public class Ponto2D {
         return this.eixoX;
     }
     
-    private void setEixoY(int y){
+    private void setEixoY(double y){
         this.eixoY = y;
     }
     
-    private double getEixoY(){
+    public double getEixoY(){
         return this.eixoY;
     }
-    
-    
 }
