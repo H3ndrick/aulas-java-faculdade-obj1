@@ -6,8 +6,8 @@ public class Linha {
     private double comprimento;
     
     public Linha(){
-        this.setPonto1(new Ponto2D(0, 0));
-        this.setPonto2(new Ponto2D(0, 0));
+        this.setPonto1(new Ponto2D());
+        this.setPonto2(new Ponto2D());
         this.calcularComprimento();
     }
     
@@ -16,7 +16,7 @@ public class Linha {
             throw new IllegalArgumentException("O ponto não pode ser null");
         }
         
-        this.setPonto1(new Ponto2D(0, 0));
+        this.setPonto1(new Ponto2D());
         this.setPonto2(ponto);
         this.calcularComprimento();
     }
