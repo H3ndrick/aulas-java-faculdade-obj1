@@ -1,0 +1,19 @@
+# Compilação e distribuição
+build/
+dist/
+target/
+out/
+*.class
+
+# Configurações locais do NetBeans
+nbproject/private/
+
+# Outros arquivos locais, se essas ferramentas forem usadas
+.gradle/
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.vscode/
+.DS_Store
