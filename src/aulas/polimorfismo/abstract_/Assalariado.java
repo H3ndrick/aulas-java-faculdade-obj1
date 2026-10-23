@@ -1,7 +1,8 @@
 package aulas.polimorfismo.abstract_;
 
+// Assalariado é um empregado
 public class Assalariado extends Empregado{
-    private double salario;
+    private double salario; // é mensal
     
     public Assalariado(String nome, String cpf, double salario){
         super(nome, cpf);

@@ -14,7 +14,7 @@ public class Horista extends Empregado{
     }
 
     public void setHorasTrabalhadas(double horasTrabalhadas) {
-        if(horasTrabalhadas > 0){
+        if(horasTrabalhadas >= 0){
            this.horasTrabalhadas = horasTrabalhadas; 
         } else{
             throw new IllegalArgumentException("Horas trabalhadas não pode ser menor que 0");

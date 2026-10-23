@@ -14,7 +14,7 @@ public class Comissionado extends Empregado{
     }
 
     public void setVendas(double vendas) {
-        if(vendas > 0){
+        if(vendas >= 0){
            this.vendas = vendas; 
         } else{
             throw new IllegalArgumentException("Vendas não pode ser menor que 0");
